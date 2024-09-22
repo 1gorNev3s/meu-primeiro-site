@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psicólogo Freud</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="bg-primary text-white py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="h4">Psicólogo Freud</h1>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Serviços</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Corpo da Página -->
+    <main>
+        <!-- Seção 1 -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center">Sobre Mim</h2>
+                <div style="text-align: center;">
+                <img src="img\Freud.jpeg" alt="Freud" class="img-fluid" style="max-width: 300px;">
+                </div>
+                <p class="text-center">Sou um psicólogo dedicado a ajudar as pessoas a encontrarem equilíbrio emocional e bem-estar mental. Minha abordagem é centrada no cliente e personalizada para atender às suas necessidades individuais.</p>
+            </div>
+        </section>
+
+        <!-- Seção 2 - Carrossel de Serviços -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center">Serviços Oferecidos</h2>
+                <div id="serviceCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <h5 class="text-center">Plano Básico</h5>
+                            <div style="text-align: center;">
+                                <img src="img\Plano Básico.jpeg" alt="Plano Básico" class="img-fluid" style="max-width: 300px;">
+                            </div>
+                            <p class="text-center">Sessões semanais de 50 minutos. Ideal para quem busca apoio psicológico básico.</p>
+                        </div>
+                        <div class="carousel-item">
+                            <h5 class="text-center">Plano Intermediário</h5>
+                            <div style="text-align: center;">
+                                <img src="img\Plano Intermediário.jpeg" alt="Plano Intermediário" class="img-fluid" style="max-width: 300px;">
+                            </div>
+                            <p class="text-center">Sessões quinzenais de 50 minutos, com foco em desenvolvimento pessoal.</p>
+                        </div>
+                        <div class="carousel-item">
+                            <h5 class="text-center">Plano Avançado</h5>
+                            <div style="text-align: center;">
+                                <img src="img\Plano Avançado.jpeg" alt="Plano Avançado" class="img-fluid" style="max-width: 300px;">
+                            </div>
+                            <p class="text-center">Sessões semanais de 75 minutos, voltadas para terapia intensiva e desenvolvimento profundo.</p>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#serviceCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#serviceCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Próximo</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 3 - Formulário de Contato -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center">Agende Sua Consulta</h2>
+                <p class="text-center">Entre em contato e agende sua consulta. Estou aqui para ajudar você a dar o primeiro passo em direção ao seu bem-estar emocional.</p>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea class="form-control" id="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-primary text-white py-3">
+        <div class="container text-center">
+            <p>&copy; <span id="year"></span> Psicólogo Freud. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Atualiza o ano atual no rodapé
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
